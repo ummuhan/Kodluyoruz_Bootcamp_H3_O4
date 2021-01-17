@@ -14,9 +14,20 @@ $c_five:#68C9BA;
 *{
     color: $c_text;
     font-family: var(--t_font);
+
     margin: 0;
     padding:0;
     background-color: #FFFAFA;
     box-sizing: content-box;
    
+}
+
+.header{
+    font-size: 16px;
+}
+@media  screen and (min-width: 768px){
+
+}
+@media  screen and (min-width:992px){
+
 }
