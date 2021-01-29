@@ -38,7 +38,7 @@
 }
 
 .wrap__logo {
-  margin: auto;
+  margin: 0;
   padding: 0;
   margin-top: 40px;
   margin-bottom: 20px;
@@ -67,7 +67,6 @@
     margin-top: 200px;
     margin-bottom: 15px;
     margin: 0px;
-    font-size: 30px;
   }
   .wrap {
     display: -webkit-box;
@@ -76,6 +75,7 @@
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    font-size: 40px;
   }
   .wrap__nav {
     font-size: 15px;
@@ -100,8 +100,11 @@
   }
   .wrap__items {
     margin-right: 40px;
+    font-family: Avenir;
+    font-style: normal;
     font-weight: 500;
     font-size: 16px;
+    line-height: 160%;
   }
   .wrap__items:hover {
     color: purple;

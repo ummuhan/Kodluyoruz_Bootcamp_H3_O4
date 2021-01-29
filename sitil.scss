@@ -14,7 +14,6 @@ $c_five:#68C9BA;
 *{
     font-family: var(--t_font);
     font-family: var(--t_font);
-
     margin: 0;
     padding:0;
     background-color: #FFFAFA;
@@ -22,7 +21,7 @@ $c_five:#68C9BA;
    
 }
 .button{
-    border-radius: 50px;
+  border-radius: 50px;
   margin:20px;
   padding:10px 20px;
     
@@ -42,8 +41,8 @@ $c_five:#68C9BA;
     text-align: center;
 
     &__logo{
-        margin: auto;
-        padding:0;
+       margin: 0;
+       padding:0;
        margin-top: 40px;
        margin-bottom: 20px;
 
@@ -67,22 +66,22 @@ $c_five:#68C9BA;
 @media  screen and (min-width: 768px){
 
   .button{
-    border-radius: 50px;
-
+  border-radius: 50px;
   margin:20px;
   padding:16px 37px;
     
 }
-    .header{
+ .header{
         margin-top: 200px;
         margin-bottom: 15px;
         margin:0px;
-        font-size: 30px;
+      
     }
 
     .wrap{
         display: flex;
         justify-content: space-between;
+        font-size: 40px;
 
         &__nav{
            font-size: 15px;
@@ -93,7 +92,7 @@ $c_five:#68C9BA;
                    position: relative;
                 &::after{
                     content: '';
-                     position: absolute;
+                    position: absolute;
                     bottom: -9px;
                     display: inline-block;
                     border-radius: 100%;
@@ -108,8 +107,12 @@ $c_five:#68C9BA;
             }
        &__items{
                 margin-right: 40px;
+                font-family: Avenir;
+                font-style: normal;
                 font-weight: 500;
                 font-size: 16px;
+                line-height: 160%;
+
           &:hover{
             color:purple;
             border: 1px solid #000000
