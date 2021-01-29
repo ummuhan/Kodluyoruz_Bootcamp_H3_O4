@@ -1,12 +1,11 @@
 :root {
-  --one_font:'Roboto',sans-serif;
+  --one_font: 'Source Sans Pro', sans-serif;
   --two_font:'Raleway', sans-serif;
   --one-font-weight:400px;
   --two-font-weight:700px;
 }
 
 * {
-  font-family: var(--t_font);
   font-family: var(--t_font);
   margin: 0;
   padding: 0;
@@ -15,10 +14,11 @@
           box-sizing: content-box;
 }
 
-.button {
+.button1 {
   border-radius: 50px;
-  margin: 20px;
-  padding: 10px 20px;
+  -webkit-box-shadow: 0px 8px 10px rgba(169, 166, 166, 0.5);
+          box-shadow: 0px 8px 10px rgba(169, 166, 166, 0.5);
+  padding: 5px 10px;
 }
 
 .button2 {
@@ -26,31 +26,57 @@
           box-shadow: 0px 8px 80px rgba(0, 0, 0, 0.5);
 }
 
+a {
+  font-size: 18px;
+  font-family: 'Source Sans Pro', sans-serif;
+  color: black;
+  text-decoration: none;
+}
+
 .header {
-  margin-top: 15px;
-  margin-bottom: 15px;
   margin: 0px;
   font-size: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .wrap {
   text-align: center;
 }
 
+.wrap__left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 30px;
+}
+
+.wrap__right {
+  margin-top: 30px;
+}
+
+.wrap__right .img {
+  margin-left: 20px;
+}
+
+.wrap__button {
+  padding: 10px 20px;
+}
+
 .wrap__logo {
   margin: 0;
   padding: 0;
-  margin-top: 40px;
-  margin-bottom: 20px;
 }
 
 .wrap__nav {
-  font-size: 18px;
-}
-
-.wrap__nav a {
-  color: black;
-  text-decoration: none;
+  margin-left: 121px;
 }
 
 .wrap__items {
@@ -60,12 +86,12 @@
 @media screen and (min-width: 768px) {
   .button {
     border-radius: 50px;
-    margin: 20px;
-    padding: 16px 37px;
+  }
+  .button:hover {
+    color: #9C69E2;
   }
   .header {
-    margin-top: 200px;
-    margin-bottom: 15px;
+    padding: 0;
     margin: 0px;
   }
   .wrap {
@@ -77,26 +103,17 @@
             justify-content: space-between;
     font-size: 40px;
   }
+  .wrap__left {
+    margin-top: 35px;
+  }
+  .wrap__right {
+    margin-top: 37px;
+  }
+  .wrap__button {
+    padding: 15px 25px;
+  }
   .wrap__nav {
     font-size: 15px;
-    margin-top: 50px;
-    margin-bottom: 20px;
-  }
-  .wrap__nav a.active {
-    position: relative;
-  }
-  .wrap__nav a.active::after {
-    content: '';
-    position: absolute;
-    bottom: -9px;
-    display: inline-block;
-    border-radius: 100%;
-    width: 3px;
-    height: 3px;
-    margin: auto;
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-            transform: translateX(-50%);
   }
   .wrap__items {
     margin-right: 40px;
@@ -107,8 +124,8 @@
     line-height: 160%;
   }
   .wrap__items:hover {
-    color: purple;
-    border: 1px solid #000000;
+    color: #9C69E2;
+    font-weight: bold;
   }
 }
 /*# sourceMappingURL=sitil.css.map */
