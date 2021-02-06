@@ -56,44 +56,35 @@ a{
         padding: 5px;
     }
 }
-@media  screen and (min-width: 770px){
+@media  screen and (min-width: 1070px){
 
-  .button{
-  border-radius: 50px;
- 
- &:hover{
-    color:#9C69E2;
-
-        }
-    
-}
  .header{
-     padding: 0;
+     padding: 0px;
      margin:0px;
+     margin-top: 66px;
+     margin-right: 160px;
+     margin-left: 160px;
       
     }
-
     .wrap{
         display: flex;
         font-size: 40px;
         justify-content: space-between;
-        
-    &__left{
-      
-        margin-top: 35px;
-    }
-     &__right{
-            margin-top: 37px;
-        }
-    &__button{
-        padding:15px 25px;
-    }
 
-        &__nav{
+    &__left{
+       
+        display: flex;
+        justify-content: space-between;
+    } 
+    &__logo{
+        margin: 0px;
+        margin-right: 81px;
+    }   
+    &__nav{
            font-size: 15px;
          
             }
-       &__items{
+    &__items{
                 margin-right: 40px;
                 font-family: Avenir;
                 font-style: normal;
@@ -105,6 +96,19 @@ a{
             color:#9C69E2;
                 }
             }
+    &__right{
+        margin: 0px;
+    }
+
+    &__button{
+        border: 1px solid white;
+        box-shadow: 2px 1px 8px rgb(216, 214, 214);
+        &:hover{
+            border: 1px solid #9C69E2;
+            box-shadow: 2px 1px 8px  #9C69E2;
+        }
+    }
+        
     }
 
 }

@@ -60,16 +60,13 @@ a {
   padding: 5px;
 }
 
-@media screen and (min-width: 770px) {
-  .button {
-    border-radius: 50px;
-  }
-  .button:hover {
-    color: #9C69E2;
-  }
+@media screen and (min-width: 1070px) {
   .header {
-    padding: 0;
+    padding: 0px;
     margin: 0px;
+    margin-top: 66px;
+    margin-right: 160px;
+    margin-left: 160px;
   }
   .wrap {
     display: -webkit-box;
@@ -81,13 +78,16 @@ a {
             justify-content: space-between;
   }
   .wrap__left {
-    margin-top: 35px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
-  .wrap__right {
-    margin-top: 37px;
-  }
-  .wrap__button {
-    padding: 15px 25px;
+  .wrap__logo {
+    margin: 0px;
+    margin-right: 81px;
   }
   .wrap__nav {
     font-size: 15px;
@@ -102,6 +102,19 @@ a {
   }
   .wrap__items:hover {
     color: #9C69E2;
+  }
+  .wrap__right {
+    margin: 0px;
+  }
+  .wrap__button {
+    border: 1px solid white;
+    -webkit-box-shadow: 2px 1px 8px #d8d6d6;
+            box-shadow: 2px 1px 8px #d8d6d6;
+  }
+  .wrap__button:hover {
+    border: 1px solid #9C69E2;
+    -webkit-box-shadow: 2px 1px 8px  #9C69E2;
+            box-shadow: 2px 1px 8px  #9C69E2;
   }
 }
 /*# sourceMappingURL=sitil.css.map */
